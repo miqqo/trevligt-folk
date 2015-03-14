@@ -940,6 +940,7 @@
 			background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png"), url("../images/header.jpg");
 			background-size: auto,							cover;
+			height: 100vh;
 		}
 
 			.main.style2 a {
