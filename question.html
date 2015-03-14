@@ -69,16 +69,48 @@
 							<header class="major">
 								<h2 id="demo"></h2>
 							</header>
-							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+							<p id="test"></p>
+							<p>lite text</p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit"><div class="ct-chart"></div></span>
 						</div>
+						
+						<ul class="actions uniform">
+						<ul class="actions">
+						</ul>
+						
+						<!-- 
+						<li><a href="#one" class="button scrolly">Nästa fråga</a></li>
+						<li><a href="#one" class="button scrolly">Tillbaka</a></li> -->
+						<div class="text_container">
+						<li><a href="#one" class="button">Påverka!</a></li>
+							<div> <!--hide text-->
+						 		<p>Här kommer påverkanstext</p>
+							</div>
+						</div>
+						</ul>
+						
 					</div>
 				</div>
 			</section>
 
+			<script type="text/javascript">
+			    $(document).ready(function(){
+			        $('.text_container').addClass("hidden");
 
+			        $('.text_container').click(function() {
+			            var $this = $(this);
+
+			            if ($this.hasClass("hidden")) {
+			                $(this).removeClass("hidden").addClass("visible");
+
+			            } else {
+			                $(this).removeClass("visible").addClass("hidden");
+			            }
+			        });
+			    });
+			</script>
 
 		<!-- Footer -->
 			<section id="footer">
