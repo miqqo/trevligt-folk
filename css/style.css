@@ -840,7 +840,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(135, 170, 177, 0.3);
+			background-color: rgba( 0.3);
 		}
 
 		input[type="submit"]:active,
@@ -942,13 +942,100 @@
 			background: #fff;
 		}
 
+		.main.style3 {
+			background-color: #333;
+			color: rgba(255, 255, 255, 0.75);
+			background-attachment: fixed,							fixed;
+			background-image: url("images/gradient.eps"), url("../images/birdpic2.jpg");
+			background-size: auto,							cover;
+			height: 100vh;
+		}
+			.main.style3 a {
+				border-bottom-color: rgba(255, 255, 255, 0.5);
+			}
+
+				.main.style3 a:hover {
+					color: #ffffff;
+				}
+
+			.main.style3 h1, .main.style3 h2, .main.style3 h3, .main.style3 h4, .main.style3 h5, .main.style3 h6, .main.style3 strong, .main.style3 b {
+				color: #ffffff;
+			}
+
+			.main.style3 header p {
+				color: #ffffff;
+			}
+
+			.main.style3 header.major:after {
+				background: #ffffff;
+			}
+
+			.main.style3 input[type="submit"],
+			.main.style3 input[type="reset"],
+			.main.style3 input[type="button"],
+			.main.style3 button,
+			.main.style3 .button {
+				box-shadow: inset 0 0 0 1px #ffffff;
+				color: #ffffff !important;
+			}
+
+				.main.style3 input[type="submit"]:hover,
+				.main.style3 input[type="reset"]:hover,
+				.main.style3 input[type="button"]:hover,
+				.main.style3 button:hover,
+				.main.style3 .button:hover {
+					background-color: rgba(255, 255, 255, 0.125);
+				}
+
+				.main.style3 input[type="submit"]:active,
+				.main.style3 input[type="reset"]:active,
+				.main.style3 input[type="button"]:active,
+				.main.style3 button:active,
+				.main.style3 .button:active {
+					background-color: rgba(255, 255, 255, 0.25);
+				}
+
+				.main.style3 input[type="submit"].special,
+				.main.style3 input[type="reset"].special,
+				.main.style3 input[type="button"].special,
+				.main.style3 button.special,
+				.main.style3 .button.special {
+					background-color: #ffffff;
+					box-shadow: inset 0 0 0 1px #ffffff !important;
+					color: #333 !important;
+				}
+
+					.main.style3 input[type="submit"].special:hover,
+					.main.style3 input[type="reset"].special:hover,
+					.main.style3 input[type="button"].special:hover,
+					.main.style3 button.special:hover,
+					.main.style3 .button.special:hover {
+						background-color: rgba(255, 255, 255, 0.125) !important;
+						color: #ffffff !important;
+					}
+
+					.main.style3 input[type="submit"].special:active,
+					.main.style3 input[type="reset"].special:active,
+					.main.style3 input[type="button"].special:active,
+					.main.style3 button.special:active,
+					.main.style3 .button.special:active {
+						background-color: rgba(255, 255, 255, 0.25) !important;
+					}
+
+			.main.style3 ul.major-icons li .icon {
+				border-color: #ffffff;
+			}
+
+			.main.style3 .icon.major {
+				color: #ffffff;
+			}
+
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png"), url("../images/headerbild3.jpg");
 			background-size: auto,							cover;
-			height: 100vh;
 		}
 
 			.main.style2 a {
@@ -1230,6 +1317,121 @@
 
 /* Footer */
 
+	#footer1 {
+		padding: 6em 0 6em 0;
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("../images/birdpic2.jpg"), linear-gradient(45deg, #4361c2, #fff 50%, #9dc66b 95%);
+		background-position: top left,						center center,					center center;
+		background-size: cover,							contain,							cover;
+		text-align: center;
+	}
+		#footer1 a {
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+		}
+
+			#footer1 a:hover {
+				color: #ffffff;
+			}
+
+		#footer1 h1, #footer1 h2, #footer1 h3, #footer1 h4, #footer1 h5, #footer1 h6, #footer1 strong, #footer1 b {
+			color: #ffffff;
+		}
+
+		#footer1 header p {
+			color: #ffffff;
+		}
+
+		#footer1 header.major:after {
+			background: #ffffff;
+		}
+
+		#footer1 input[type="submit"],
+		#footer1 input[type="reset"],
+		#footer1 input[type="button"],
+		#footer1 button,
+		#footer1 .button {
+			box-shadow: inset 0 0 0 1px #ffffff;
+			color: #ffffff !important;
+		}
+
+			#footer1 input[type="submit"]:hover,
+			#footer1 input[type="reset"]:hover,
+			#footer1 input[type="button"]:hover,
+			#footer1 button:hover,
+			#footer1 .button:hover {
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+
+			#footer1 input[type="submit"]:active,
+			#footer1 input[type="reset"]:active,
+			#footer1 input[type="button"]:active,
+			#footer1 button:active,
+			#footer1 .button:active {
+				background-color: rgba(255, 255, 255, 0.25);
+			}
+
+			#footer1 input[type="submit"].special,
+			#footer1 input[type="reset"].special,
+			#footer1 input[type="button"].special,
+			#footer1 button.special,
+			#footer1 .button.special {
+				background-color: #ffffff;
+				box-shadow: inset 0 0 0 1px #ffffff !important;
+				color: #4686a0 !important;
+			}
+
+				#footer1 input[type="submit"].special:hover,
+				#footer1 input[type="reset"].special:hover,
+				#footer1 input[type="button"].special:hover,
+				#footer1 button.special:hover,
+				#footer1 .button.special:hover {
+					background-color: rgba(255, 255, 255, 0.125) !important;
+					color: #ffffff !important;
+				}
+
+				#footer1 input[type="submit"].special:active,
+				#footer1 input[type="reset"].special:active,
+				#footer1 input[type="button"].special:active,
+				#footer1 button.special:active,
+				#footer1 .button.special:active {
+					background-color: rgba(255, 255, 255, 0.25) !important;
+				}
+
+		#footer1 ul.major-icons li .icon {
+			border-color: #ffffff;
+		}
+
+		#footer1 .icon.major {
+			color: #ffffff;
+		}
+
+		#footer1 .icons {
+			margin: 0;
+		}
+
+		#footer1 .copyright {
+			font-size: 0.8em;
+			list-style: none;
+			margin: 2em 0 0 0;
+			padding: 0;
+		}
+
+			#footer1 .copyright li {
+				border-left: solid 1px;
+				display: inline-block;
+				line-height: 1em;
+				margin-left: 1em;
+				padding: 0 0 0 1em;
+			}
+
+				#footer1 .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding: 0;
+				}
+
 	#footer {
 		padding: 6em 0 6em 0;
 		background-color: #4686a0;
@@ -1237,7 +1439,7 @@
 		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("../images/headerbild3.jpg"), linear-gradient(45deg, #4361c2, #fff 50%, #9dc66b 95%);
 		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
+		background-size: cover,							contain,							cover;
 		text-align: center;
 	}
 
