@@ -79,11 +79,8 @@
 						<ul class="actions uniform">
 						<ul class="actions">
 						
-						<!-- 
-						<li><a href="#one" class="button scrolly">Nästa fråga</a></li>
-						<li><a href="#one" class="button scrolly">Tillbaka</a></li> -->
 						<div class="text_container">
-						<li><a href="#paverka" class="button scrolly">Påverka!</a></li>
+							<li><a href="#paverka" class="button scrolly">Påverka!</a></li>
 							<div> <!--hide text-->
 						 		<p id="paverka"></br>Via <a href="http://www.hjart-lungfonden.se/">Hjärt-Lungfonden</a> kan du engagera dig genom att exemeplvis starta en egen insamling eller boka en föreläsning för att öka medvetenheten om hjärt och lungsjukdomar.
 						 			Där finns även instruktioner om hur du ska gå tillväga om någon i din närhet får en hjärtinfarkt. Tänk på att din hälsa och livsstil påverkar risken att drabbas av en hjärtinfarkt! Dela denna sida för att uppmärksamma andra om detta!</p>
@@ -98,13 +95,6 @@
 						</div>
 						</ul>
 						</ul>
-						<!-- <div class="text_container">
-						<div>
-						 	<p>Här kommer påverkanstext</p>
-						</div>
-						</div> -->
-						
-					
 				</div>
 			</section>
 
@@ -164,12 +154,11 @@
 			    });
 			});
 
-			    $(document).read(function(){
+			     $(document).ready(function(){
 			        $('.text_container').addClass("hidden");
 
 			        $('.text_container').click(function() {
 			            var $this = $(this);
-
 
 			            if ($this.hasClass("hidden")) {
 			                $(this).removeClass("hidden").addClass("visible");
