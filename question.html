@@ -35,10 +35,9 @@
 			<section id="four" class="main style2 special">
 				<div class="container">
 					<header class="major">
-						<h2>Var arbetsstatistiken verkligen bättre</br> förr för utrikes födda?
-						</h2>
+						<h2>Var verkligen bättre förr?</br>Med avseende på antal hjärtinfarkter i Sverige. </h2>
 					</header>
-					<p>Statistiken är från år 1997-2013.</p>
+					<p>Statistiken är baserad på data från år 1998-2013.</p>
 					<ul class="actions uniform">
 					<ul class="actions">
 					</ul>
@@ -51,10 +50,10 @@
 
 			<script>
 				function myFunctionTrue() {
-				    document.getElementById("demo").innerHTML = "Det stämmer!";
+				    document.getElementById("demo").innerHTML = "Det stämmer inte!";
 				}
 				function myFunctionFalse() {
-				    document.getElementById("demo").innerHTML = "Det stämmer inte!";
+				    document.getElementById("demo").innerHTML = "Det stämmer!";
 				}
 			</script>
 
@@ -66,8 +65,8 @@
 							<header class="major">
 								<h2 id="demo"></h2>
 							</header>
-							<p id="test"></p>
-							<p>lite text</p>
+							<p>Grafen visar antalet akuta hjärtinfarkter i Sverige från år 1998-2013. Befolkningen i detta fall omfattar samtliga personer i åldrarna 20 år och äldre. Statistiken är hämtad från <a href="http://bit.ly/1x4K43A">statistiska centralbyrån</a>.</p>
+
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit"><div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div></span>
@@ -92,11 +91,67 @@
 			</section>
 
 			<script type="text/javascript">
+			$(function () {
+			    $('#container').highcharts({
+			        chart: {
+			            type: 'area'
+			        },
+			        title: {
+			            text: ' '
+			        },
+			        xAxis: {
+			            allowDecimals: false,
+			            labels: {
+			                formatter: function () {
+			                    return this.value; // clean, unformatted number for year
+			                }
+			            }
+			        },
+			        yAxis: {
+			            title: {
+			                text: ' '
+			            },
+			            labels: {
+			                formatter: function () {
+			                    return this.value / 1000 + 'k';
+			                }
+			            }
+			        },
+			        tooltip: {
+			            pointFormat: '<b>{point.y:,.0f}</b> antal {series.name}<br/>'
+			        },
+			        plotOptions: {
+			            area: {
+			                pointStart: 1998,
+			                marker: {
+			                    enabled: false,
+			                    symbol: 'circle',
+			                    radius: 2,
+			                    states: {
+			                        hover: {
+			                            enabled: true
+			                        }
+			                    }
+			                }
+			            }
+			        },
+			        series: [{
+			            name: 'män',
+			            data: [1385, 1307, 1384, 1492, 1369, 1411, 1284, 1336, 1413, 1357, 1254, 1174, 1103, 1066, 1056, 903]
+			        },
+			            {
+			            name: 'kvinnor',
+			            data: [1160, 1136, 1247, 1386, 1293, 1290, 1181, 1206, 1225, 1234, 1111, 951, 869, 827, 779, 682]
+			        } ]
+			    });
+			});
+
 			    $(document).ready(function(){
 			        $('.text_container').addClass("hidden");
 
 			        $('.text_container').click(function() {
 			            var $this = $(this);
+
 
 			            if ($this.hasClass("hidden")) {
 			                $(this).removeClass("hidden").addClass("visible");
