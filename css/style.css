@@ -1470,6 +1470,7 @@
 		#footer .button {
 			box-shadow: inset 0 0 0 1px #ffffff;
 			color: #ffffff !important;
+			width: 400px;
 		}
 
 			#footer input[type="submit"]:hover,
