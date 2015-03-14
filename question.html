@@ -10,16 +10,14 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		
-		<!--<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-		<script src="js/graphs.js"></script>-->
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
     	
 
 		<noscript>
@@ -29,8 +27,7 @@
 			
 
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
 	</head>
 	<body>
 
@@ -38,10 +35,9 @@
 			<section id="four" class="main style2 special">
 				<div class="container">
 					<header class="major">
-						<h2>Var det verkligen bättre för när det kommer till </br>
-						arbetsstatistiken för invandrare?</h2>
+						<h2>Var verkligen bättre förr?</br>Med avseende på antal hjärtinfarkter i Sverige. </h2>
 					</header>
-					<p></p>
+					<p>Statistiken är baserad på data från år 1998-2013.</p>
 					<ul class="actions uniform">
 					<ul class="actions">
 					</ul>
@@ -54,10 +50,10 @@
 
 			<script>
 				function myFunctionTrue() {
-				    document.getElementById("demo").innerHTML = "Det stämmer!";
+				    document.getElementById("demo").innerHTML = "Det stämmer inte!";
 				}
 				function myFunctionFalse() {
-				    document.getElementById("demo").innerHTML = "Det stämmer inte!";
+				    document.getElementById("demo").innerHTML = "Det stämmer!";
 				}
 			</script>
 
@@ -69,16 +65,104 @@
 							<header class="major">
 								<h2 id="demo"></h2>
 							</header>
-							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+							<p>Grafen visar antalet akuta hjärtinfarkter i Sverige från år 1998-2013. Befolkningen i detta fall omfattar samtliga personer i åldrarna 20 år och äldre. Statistiken är hämtad från <a href="http://bit.ly/1x4K43A">statistiska centralbyrån</a>.</p>
+
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-							<span class="image fit"><div class="ct-chart"></div></span>
+							<span class="image fit"><div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div></span>
 						</div>
+						
+						<ul class="actions uniform">
+						<ul class="actions">
+						</ul>
+						
+						<!-- 
+						<li><a href="#one" class="button scrolly">Nästa fråga</a></li>
+						<li><a href="#one" class="button scrolly">Tillbaka</a></li> -->
+						<div class="text_container">
+						<li><a href="#one" class="button">Påverka!</a></li>
+							<div> <!--hide text-->
+						 		<p>Här kommer påverkanstext</p>
+							</div>
+						</div>
+						</ul>
+						
 					</div>
 				</div>
 			</section>
 
+			<script type="text/javascript">
+			$(function () {
+			    $('#container').highcharts({
+			        chart: {
+			            type: 'area'
+			        },
+			        title: {
+			            text: ' '
+			        },
+			        xAxis: {
+			            allowDecimals: false,
+			            labels: {
+			                formatter: function () {
+			                    return this.value; // clean, unformatted number for year
+			                }
+			            }
+			        },
+			        yAxis: {
+			            title: {
+			                text: ' '
+			            },
+			            labels: {
+			                formatter: function () {
+			                    return this.value / 1000 + 'k';
+			                }
+			            }
+			        },
+			        tooltip: {
+			            pointFormat: '<b>{point.y:,.0f}</b> antal {series.name}<br/>'
+			        },
+			        plotOptions: {
+			            area: {
+			                pointStart: 1998,
+			                marker: {
+			                    enabled: false,
+			                    symbol: 'circle',
+			                    radius: 2,
+			                    states: {
+			                        hover: {
+			                            enabled: true
+			                        }
+			                    }
+			                }
+			            }
+			        },
+			        series: [{
+			            name: 'män',
+			            data: [1385, 1307, 1384, 1492, 1369, 1411, 1284, 1336, 1413, 1357, 1254, 1174, 1103, 1066, 1056, 903]
+			        },
+			            {
+			            name: 'kvinnor',
+			            data: [1160, 1136, 1247, 1386, 1293, 1290, 1181, 1206, 1225, 1234, 1111, 951, 869, 827, 779, 682]
+			        } ]
+			    });
+			});
 
+			    $(document).ready(function(){
+			        $('.text_container').addClass("hidden");
+
+			        $('.text_container').click(function() {
+			            var $this = $(this);
+
+
+			            if ($this.hasClass("hidden")) {
+			                $(this).removeClass("hidden").addClass("visible");
+
+			            } else {
+			                $(this).removeClass("visible").addClass("hidden");
+			            }
+			        });
+			    });
+			</script>
 
 		<!-- Footer -->
 			<section id="footer">
