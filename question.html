@@ -66,10 +66,27 @@
 								<h2 id="demo"></h2>
 							</header>
 							<p>Grafen visar antalet akuta hjärtinfarkter i Sverige från år 1998-2013. Befolkningen i detta fall omfattar samtliga personer i åldrarna 20 år och äldre. Statistiken är hämtad från <a href="http://bit.ly/1x4K43A">statistiska centralbyrån</a>.</p>
+
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit"><div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div></span>
 						</div>
+						
+						<ul class="actions uniform">
+						<ul class="actions">
+						</ul>
+						
+						<!-- 
+						<li><a href="#one" class="button scrolly">Nästa fråga</a></li>
+						<li><a href="#one" class="button scrolly">Tillbaka</a></li> -->
+						<div class="text_container">
+						<li><a href="#one" class="button">Påverka!</a></li>
+							<div> <!--hide text-->
+						 		<p>Här kommer påverkanstext</p>
+							</div>
+						</div>
+						</ul>
+						
 					</div>
 				</div>
 			</section>
@@ -129,8 +146,23 @@
 			        } ]
 			    });
 			});
-			</script>
 
+			    $(document).ready(function(){
+			        $('.text_container').addClass("hidden");
+
+			        $('.text_container').click(function() {
+			            var $this = $(this);
+
+
+			            if ($this.hasClass("hidden")) {
+			                $(this).removeClass("hidden").addClass("visible");
+
+			            } else {
+			                $(this).removeClass("visible").addClass("hidden");
+			            }
+			        });
+			    });
+			</script>
 
 		<!-- Footer -->
 			<section id="footer">
