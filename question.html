@@ -45,12 +45,21 @@
 					<ul class="actions uniform">
 					<ul class="actions">
 					</ul>
-						<li><a href="#one" class="button scrolly">Ja</a></li>
-						<li><a href="#one" class="button scrolly">Nej</a></li>
+						<li><a href="#one" onclick="myFunctionTrue()" class="button scrolly">Ja</a></li>
+						<li><a href="#one" onclick="myFunctionFalse()" class="button scrolly">Nej</a></li>
 					</ul>
 
 				</div>
 			</section>
+
+			<script>
+				function myFunctionTrue() {
+				    document.getElementById("demo").innerHTML = "Det stämmer!";
+				}
+				function myFunctionFalse() {
+				    document.getElementById("demo").innerHTML = "Det stämmer inte!";
+				}
+			</script>
 
 			<!-- One -->
 			<section id="one" class="main style1">
@@ -58,7 +67,7 @@
 					<div class="row 150%">
 						<div class="6u 12u$(medium)">
 							<header class="major">
-								<h2>Det stämmer!</h2>
+								<h2 id="demo"></h2>
 							</header>
 							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
 						</div>
