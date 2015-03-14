@@ -10,16 +10,14 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		
-		<!--<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-		<script src="js/graphs.js"></script>-->
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
     	
 
 		<noscript>
@@ -29,8 +27,7 @@
 			
 
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
 	</head>
 	<body>
 
@@ -38,10 +35,10 @@
 			<section id="four" class="main style2 special">
 				<div class="container">
 					<header class="major">
-						<h2>Var det verkligen bättre för när det kommer till </br>
-						arbetsstatistiken för invandrare?</h2>
+						<h2>Var arbetsstatistiken verkligen bättre</br> förr för utrikes födda?
+						</h2>
 					</header>
-					<p></p>
+					<p>Statistiken är från år 1997-2013.</p>
 					<ul class="actions uniform">
 					<ul class="actions">
 					</ul>
@@ -73,7 +70,7 @@
 							<p>lite text</p>
 						</div>
 						<div class="6u$ 12u$(medium) important(medium)">
-							<span class="image fit"><div class="ct-chart"></div></span>
+							<span class="image fit"><div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div></span>
 						</div>
 						
 						<ul class="actions uniform">
