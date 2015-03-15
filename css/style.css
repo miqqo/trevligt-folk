@@ -840,7 +840,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba( 0.3);
+			background-color: rgba( 144, 144, 144, 0.3);
 		}
 
 		input[type="submit"]:active,
@@ -1281,7 +1281,6 @@
 			opacity: 1;
 			position: relative;
 			z-index: 1;
-			height: 60vh;
 		}
 
 			#header .inner .actions {
@@ -1301,6 +1300,12 @@
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 				opacity: 1;
+			}
+			#header .inner .actions .button {
+				background-color: rgba(144, 144, 144, 0.3) !important;
+			}
+			#header .inner .actions .button:hover {
+				background-color: rgba(144, 144, 144, 0.5) !important;
 			}
 
 		#header:after {
