@@ -950,7 +950,7 @@
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/gradient.eps"), url("../images/birdpic2.jpg");
+			background-image: url("images/gradient.eps"), url("../images/gradient2.png");
 			background-size: auto,							cover;
 			height: 100vh;
 		}
@@ -1038,7 +1038,7 @@
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../images/headerbild3.jpg");
+			background-image: url("../images/gradient.png"), url("../images/skog.jpg");
 			background-size: auto,							cover;
 		}
 
@@ -1128,7 +1128,7 @@
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("../images/gradient2.png"), linear-gradient(45deg, #fff 5%, #4fa49a 30%, #4361c2);
+		background-image: url("../images/gradient3.png"), linear-gradient(45deg, #fff 5%, #4fa49a 30%, #4361c2);
 		background-position: center;,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -1354,7 +1354,7 @@
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("../images/birdpic2.jpg"), linear-gradient(45deg, #4361c2, #fff 50%, #9dc66b 95%);
+		background-image: url("../images/gradient3.png"), linear-gradient(45deg, #4361c2, #fff 50%, #9dc66b 95%);
 		background-position: top left,						center center,					center center;
 		background-size: cover,							contain,							cover;
 		text-align: center;
