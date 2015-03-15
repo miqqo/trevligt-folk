@@ -933,6 +933,10 @@
 		}
 
 /* Main */
+	#onepresent{
+		background: #fff;
+		height: 100vh;
+	}
 
 	.main {
 		padding: 6em 0 4em 0;
@@ -1119,6 +1123,27 @@
 			}
 
 /* Header */
+#headerpresent {
+		padding: 9em 0 9em 0;
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("../images/gradient2.png"), linear-gradient(45deg, #fff 5%, #4fa49a 30%, #4361c2);
+		background-position: center;,						center center,					center center;
+		background-size: auto,							cover,							cover;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		background-repeat: no-repeat;
+		height: 100vh;
+	}
+	#headerpresent a {
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+		}
+
+#headerpresent a:hover {
+				color: #ffffff;
+			}
 
 	#header {
 		padding: 9em 0 9em 0;
@@ -1294,6 +1319,7 @@
 			width: 100%;
 		}
 
+
 	body.is-loading #header .inner {
 		-moz-transform: scale(1.05);
 		-webkit-transform: scale(1.05);
@@ -1432,6 +1458,27 @@
 					margin-left: 0;
 					padding: 0;
 				}
+
+
+
+		#footerpresent {
+		padding: 6em 0 6em 0;
+		background-color: #4686a0;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("../images/gradient2.png"), linear-gradient(45deg, #4361c2, #fff 50%, #9dc66b 95%);
+		background-position: top left,						center center,					center center;
+		background-size: cover,							contain,							cover;
+		text-align: center;
+	}
+
+		#footerpresent a {
+			border-bottom-color: rgba(255, 255, 255, 0.5);
+		}
+
+			#footerpresent a:hover {
+				color: #ffffff;
+			}
 
 	#footer {
 		padding: 6em 0 6em 0;
