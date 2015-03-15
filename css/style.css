@@ -950,7 +950,7 @@
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/gradient.eps"), url("../images/gradient2.png");
+			background-image: url("images/gradient.eps"), url("../images/background2.png");
 			background-size: auto,							cover;
 			height: 100vh;
 		}
